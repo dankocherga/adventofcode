@@ -24,6 +24,8 @@
     { :id id :l l :t t :w w :h h }))
 
 (defn- fabric-points
+  "Get seq of all fabric points.  Fabric point is a vec of claim ids that are applied at that point
+  Result: (seq [id1 id2] [id3] ...)"
   [fab]
   (mapcat vals (vals fab)))
 
