@@ -5,6 +5,6 @@
 
 (defn part2 [input]
   (reduce 
-    (fn [seen v] (if-not (get seen v) (conj seen v) (reduced v)))
+    (fn [seen v] (if-not (contains? seen v) (conj seen v) (reduced v)))
     #{}
     (reductions + (cycle input))))
