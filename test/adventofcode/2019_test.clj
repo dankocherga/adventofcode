@@ -3,6 +3,7 @@
             [clojure.string :as str]
             [adventofcode.2019.d1 :as d1]
             [adventofcode.2019.d2 :as d2]
+            [adventofcode.2019.d3 :as d3]
             ))
 
 (def input-d1
@@ -26,3 +27,12 @@
 
 (deftest d2-part1
   (is (= 8226 (d2/part2 input-d2 19690720))))
+
+(def input-d3
+  (str/split-lines
+    (slurp "resources/2019/d3_input.txt")))
+
+(deftest d3
+  (is (= [855 11238] (d3/solution
+                   (get input-d3 0)
+                   (get input-d3 1)))))
