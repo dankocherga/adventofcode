@@ -4,6 +4,7 @@
             [adventofcode.2019.d1 :as d1]
             [adventofcode.2019.d2 :as d2]
             [adventofcode.2019.d3 :as d3]
+            [adventofcode.2019.d4 :as d4]
             ))
 
 (def input-d1
@@ -36,3 +37,9 @@
   (is (= [855 11238] (d3/solution
                    (get input-d3 0)
                    (get input-d3 1)))))
+
+(deftest d4-part1
+  (is (= 921 (d4/part1 278384 824795))))
+
+(deftest d4-part2
+  (is (= 921 (d4/part2 278384 824795))))
